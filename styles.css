@@ -260,6 +260,13 @@ a:hover { color: #000; text-decoration-color: var(--text-dark); }
   gap: 1.5rem;
 }
 
+.logline {
+  font-style: italic;
+  color: var(--text-mid);
+  font-size: 0.95rem;
+  margin: 0.4rem 0 0.75rem;
+}
+
 @media (max-width: 540px) {
   .film-card { flex-direction: column; }
 }
