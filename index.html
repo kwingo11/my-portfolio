@@ -17,21 +17,27 @@
   </header>
 
   <main>
-    <h1>You've reached Kris Wingo's website.</h1>
-    <p>Good job. I'm proud of you.</p>
+    <section class="hero">
+      <span class="eyebrow">Welcome</span>
+      <h1>You've reached Kris Wingo's website.</h1>
+      <p>Good job. I'm proud of you.</p>
+    </section>
 
-    <h2>What about me are you interested in?</h2>
-    <ul class="cta-list">
-      <li><a href="experience.html">Professional experience</a></li>
-      <li><a href="filmmaking.html">Filmmaking</a></li>
-    </ul>
+    <div class="hero-divider"></div>
+
+    <p class="explore-heading">What about me are you interested in?</p>
+    <div class="cta-grid">
+      <a class="cta-card" href="experience.html">
+        Professional Experience
+        <span>Learning &amp; career</span>
+      </a>
+      <a class="cta-card" href="filmmaking.html">
+        Filmmaking
+        <span>Creative work</span>
+      </a>
+    </div>
   </main>
 
-  <footer>
-    &copy; <span id="year"></span> Kris Wingo
-  </footer>
-
   <script src="script.js"></script>
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
