@@ -1,0 +1,152 @@
+:root {
+  --bg: #ffffff;
+  --text-dark: #2e2e2e;
+  --text-mid: #555555;
+  --text-light: #888888;
+  --border: #dddddd;
+  --max-width: 760px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text-dark);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  border-bottom: 1px solid var(--border);
+  padding: 1.5rem 1rem;
+}
+
+nav {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: var(--text-mid);
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--text-dark);
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem 1.5rem 5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-top: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+p {
+  color: var(--text-mid);
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--text-dark);
+  text-decoration: underline;
+  text-decoration-color: var(--text-light);
+}
+
+a:hover {
+  color: #000;
+}
+
+ul {
+  padding-left: 1.2rem;
+  color: var(--text-mid);
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+.links-row {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.links-row a {
+  font-size: 0.95rem;
+}
+
+.cta-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1.5rem;
+}
+
+.cta-list li {
+  margin-bottom: 0.75rem;
+}
+
+.cta-list a {
+  font-size: 1.05rem;
+}
+
+.project,
+.film {
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+  margin-top: 1.5rem;
+}
+
+.meta {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.placeholder {
+  color: var(--text-light);
+  font-style: italic;
+}
+
+footer {
+  text-align: center;
+  color: var(--text-light);
+  font-size: 0.85rem;
+  padding: 2rem 1rem;
+  border-top: 1px solid var(--border);
+}

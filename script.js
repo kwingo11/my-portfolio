@@ -1,18 +1,10 @@
-const menuButton = document.querySelector(".menu-toggle");
-const navigation = document.querySelector(".navigation");
-
-menuButton.addEventListener("click", () => {
-  const isOpen = navigation.classList.toggle("open");
-  menuButton.setAttribute("aria-expanded", String(isOpen));
-  menuButton.innerHTML = isOpen ? 'Close <span>×</span>' : 'Menu <span>＋</span>';
-});
-
-navigation.querySelectorAll("a").forEach((link) => {
-  link.addEventListener("click", () => {
-    navigation.classList.remove("open");
-    menuButton.setAttribute("aria-expanded", "false");
-    menuButton.innerHTML = 'Menu <span>＋</span>';
+// Highlights the current page's nav link as active
+document.addEventListener("DOMContentLoaded", () => {
+  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+  document.querySelectorAll("nav a").forEach(link => {
+    const linkPage = link.getAttribute("href");
+    if (linkPage === currentPage) {
+      link.classList.add("active");
+    }
   });
 });
-
-document.querySelector("#year").textContent = new Date().getFullYear();
